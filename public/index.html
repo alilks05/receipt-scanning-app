@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Scanning App</title>
+</head>
+<body>
+    <h1>Upload Receipt</h1>
+    <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="receipt">Upload Receipt:</label>
+        <input type="file" id="receipt" name="receipt" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

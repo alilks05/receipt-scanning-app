@@ -38,3 +38,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Receipt scanning app specific
+/uploads/                        # Ignore uploaded files
+parsed_receipt.json              # Ignore the parsed JSON file
+/Users/admin/Downloads/*.json    # Ignore the Vision API key if stored locally
+*.json                           # Ignore any JSON configuration files
